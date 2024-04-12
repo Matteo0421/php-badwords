@@ -1,7 +1,11 @@
 <?php
 
-  $nome = $_POST['nome'];
-  $cognome = $_POST['cognome'];
+  $paragrafo = $_POST['paragrafo'];
+  $password = $_POST['password'];
+
+  $lunghezza_paragrafo = strlen($paragrafo);
+
+  $password_censured = str_repeat('*', strlen($password));
 
 ?>
 <!DOCTYPE html>
@@ -16,9 +20,11 @@
 </head>
 <body>
 
-  <div class="container my-5">
-    <h1>Nome: <?php echo $nome ?></h1>
-    <h1>Cognome: <?php echo $cognome ?></h1>
+  <div class="container my-5 mt-5 ">
+    <h1 class="text-center mb-5">Paragrafo: <?php echo $paragrafo ?></h1>
+    <h1 class="text-center text-danger ">Password: <?php echo $password ?></h1>
+    <h1 class="text-center mb-5">Lunghezza del paragrafo: <?php echo $lunghezza_paragrafo ?> caratteri</h1>
+    <h1 class="text-center text-danger " >Password: <?php echo $password_censured ?></h1>
   </div>
   
 </body>

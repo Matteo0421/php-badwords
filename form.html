@@ -16,15 +16,15 @@
       <form action="index.php" method="POST">
 
         <div class="mb-3">
-          <label class="form-label" placeholder="nome" >Nome</label>
+          <label class="form-label" placeholder="Scrivi il tuo paragrafo" >Paragrafo</label>
           <!-- l'input DEVE avere il name che è la variabile che viene inviata in POST e quindi letta
           Es name="indirizzo" -> la leggo come $_POST['indirizzo'] nella pagina di atterraggio -->
-          <input name="nome" type="text" class="form-control">
+          <input name="paragrafo" type="text" class="form-control">
         </div>
 
         <div class="mb-3">
-          <label class="form-label" placeholder="nome">Cognome</label>
-          <input name="cognome" type="text" class="form-control">
+          <label class="form-label" placeholder="Cripta il tuo paragrafo con una password">password</label>
+          <input name="password" type="text" class="form-control">
         </div>
 
         <button type="submit" class="btn btn-primary">Invio</button>
